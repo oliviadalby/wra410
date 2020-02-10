@@ -1,11 +1,17 @@
 body {
     background-color: #EEE;
-    font-family: 'Sarabun',Helvetica, Arial, sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+	
 }
 
 a {
   text-decoration: none;
-  color: #B23333;
+  color: darkblue;
+  list-style: none;
+}
+
+a .selected {
+	text-color: mediumorchid;
 }
 
 h1, h2, h3  {
@@ -58,10 +64,22 @@ h1, h2, h3  {
   margin: 20px;
   border: 20px;
   padding: 10px;
-  background-color:  #d3d3d3;
+  background-color: whitesmoke;
   color: black;
-  text-align: left;
+  text-align: center;	
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  display: grid;
+	
 }
+
+
+
+.student-group-name {
+	text-align: center;
+		}
+		
 
 #footer {
   clear: both;
@@ -73,7 +91,7 @@ h1, h2, h3  {
 .schedule-date {
   font-weight: bold;
   color: black;
-  text-align: right;
+  text-align: left;
 }
 .schedule-resources {
   font-weight: lighter;
